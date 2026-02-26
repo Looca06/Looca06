@@ -1,12 +1,36 @@
-- 👋 Hi, I’m @Looca06
-- 👀 I’m interested in AI, Trading
-- 🌱 I’m currently learning Math, Science
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+# Modèle pression du vent sur porte vitrée
 
-<!---
-Looca06/Looca06 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Ce dépôt contient un petit modèle Python pour estimer :
+
+- la **pression dynamique du vent** (en Pascal),
+- la **force totale exercée** sur une porte vitrée (en Newton).
+
+## Formules utilisées
+
+- Pression : `q = 0.5 × ρ × V²`
+- Force : `F = q × C_d × A`
+
+Avec :
+
+- `ρ` : masse volumique de l'air (kg/m³),
+- `V` : vitesse du vent (m/s),
+- `C_d` : coefficient de traînée,
+- `A` : surface de la porte (m²).
+
+## Fichier principal
+
+- `modele_pression_vent.py`
+
+## Exécution
+
+```bash
+python3 modele_pression_vent.py
+```
+
+Exemple de sortie :
+
+```text
+Surface porte : 1.89 m²
+Pression du vent : 551.2 Pa
+Force sur la porte : 1250.2 N
+```
